@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <link href="/css/estilos.css" rel="stylesheet"/>
+    <link href="/css/estilos.css" rel="stylesheet" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,65 +13,143 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="main.css" rel="stylesheet"/>
-    <link rel="icon" href="/Birthday_Cake_icon-icons.com_68779.png">
+    <link href="main.css" rel="stylesheet" />
+    <link rel="icon" href="/Birthday_Cake_icon-icons.com_68779.png" />
 
     <title>La Casita</title>
   </head>
   <body>
+
+    <header>
+      <!--Barra de navegación-->
+    <nav
+    class="navbar navbar-expand-lg navbar-light bg-light"
+  >
+    <div class="container-fluid">
+      <a style="color: red" class="navbar-brand" href="#"> <img src="/Logo.jpeg" width="80px" /> </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </header>
+
+
+    <!--Contenedor de conenido-->
+<div class="container">
     
-    <nav style="color: #9BF6FF;" class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-        </div>
+
+
+<!--Tarjetas-->
+<div style="margin-top:10px;" class="row row-cols-1 row-cols-md-3 g-4">
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
       </div>
-    </nav>
+    </div>
+  </div>
 
-    <div class="card" style="width: 18rem;">
-        <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
       </div>
-      
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modelo Ejemplo</h5>
+        <p style="font-size:25px" class="card-text">$200</p>
+        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
+      </div>
+    </div>
+  </div>
 
 
-    <h1>proband</h1>
+</div>
 
+<!--div del container-->
+  </div>
+  <!---->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
