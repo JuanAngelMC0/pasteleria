@@ -19,167 +19,295 @@
     <title>La Casita</title>
   </head>
   <body>
-
     <header>
       <!--Barra de navegación-->
-    <nav style="background-color: #bcf2f7" class="navbar navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="/Logo.jpeg" width="80px" /> </a>
-      <img src="/la casita letras.png" style="width: 160px; padding-right: 20px;"/>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+      <nav
+        style="background-color: #bcf2f7"
+        class="navbar navbar-expand-lg navbar-light"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Pasteles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Otros productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contacto.html">Contactanos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/Logo.jpeg" width="80px" />
+          </a>
+          <img
+            src="/la casita letras.png"
+            style="width: 160px; padding-right: 20px"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pasteles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Otros productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <br/> <br/>
+    <br />
+    <br />
 
     <!--Contenedor de conenido-->
-<div class="container">
-    
-  
+    <div class="container">
+      <!--Tarjetas-->
+      <div style="margin-top: 10px" class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-chocolate-grande-01_3ee59ef6-c0c6-4f64-883a-2aff61340276_1800x1800.jpg?v=1602635160.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel de Chocolate</h5>
+              <p style="font-size: 25px" class="card-text">$380</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                id="btnModal1"
+                onclick="abrirModal()"
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-zanahoria-grande-01_11db4b12-79cd-4838-aa51-d09d3dd11d92_1800x1800.jpg?v=1602635304.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel de Zanahoria</h5>
+              <p style="font-size: 25px" class="card-text">$410</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
 
-<!--Tarjetas-->
-<div style="margin-top:10px;" class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://neufeld.com.mx/medios/2019/09/pastel-de-fresa.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel de Fresa</h5>
+              <p style="font-size: 25px" class="card-text">$550</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
 
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-chocolate-grande-01_3ee59ef6-c0c6-4f64-883a-2aff61340276_1800x1800.jpg?v=1602635160.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel de Chocolate</h5>
-        <p style="font-size:25px" class="card-text">$380</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button id="btnModal1" onclick="abrirModal()" style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://neufeld.com.mx/medios/2019/09/pastel-de-moka.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel de Moka</h5>
+              <p style="font-size: 25px" class="card-text">$680</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-capricho-cajeta-grande-01_1800x1800.jpg?v=1592870529.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel Capricho</h5>
+              <p style="font-size: 25px" class="card-text">$305</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-tres-leches-grande-01_e16d4e7e-ec39-410a-9c04-36c3c53d12c6_1800x1800.jpg?v=1600124396.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel de 3 Leches</h5>
+              <p style="font-size: 25px" class="card-text">$485</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/rosca-adiccion-grande-01_1c7254b8-370c-4040-b8ae-7b320bd3a275_1800x1800.jpg?v=1592870788.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rosca Adicción</h5>
+              <p style="font-size: 25px" class="card-text">$370</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                id="btnModal1"
+                onclick="abrirModal()"
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-red-velvet-grande-01_1800x1800.jpg?v=1592870586.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel Red Velvet</h5>
+              <p style="font-size: 25px" class="card-text">$380</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://file.adomicil.io/esperanza.tr3sco.net/_files/images/product/e-commers2-0865092043236407.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel Imposible</h5>
+              <p style="font-size: 25px" class="card-text">$390</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!--div del container-->
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-zanahoria-grande-01_11db4b12-79cd-4838-aa51-d09d3dd11d92_1800x1800.jpg?v=1602635304.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel de Zanahoria</h5>
-        <p style="font-size:25px" class="card-text">$410</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://neufeld.com.mx/medios/2019/09/pastel-de-fresa.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel de Fresa</h5>
-        <p style="font-size:25px" class="card-text">$550</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://neufeld.com.mx/medios/2019/09/pastel-de-moka.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel de Moka</h5>
-        <p style="font-size:25px" class="card-text">$680</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-capricho-cajeta-grande-01_1800x1800.jpg?v=1592870529.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel Capricho</h5>
-        <p style="font-size:25px" class="card-text">$305</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-tres-leches-grande-01_e16d4e7e-ec39-410a-9c04-36c3c53d12c6_1800x1800.jpg?v=1600124396.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel de 3 Leches</h5>
-        <p style="font-size:25px" class="card-text">$485</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-       <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/rosca-adiccion-grande-01_1c7254b8-370c-4040-b8ae-7b320bd3a275_1800x1800.jpg?v=1592870788.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Rosca Adicción</h5>
-        <p style="font-size:25px" class="card-text">$370</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button id="btnModal1" onclick="abrirModal()" style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn.shopify.com/s/files/1/0276/1493/7159/products/pastel-red-velvet-grande-01_1800x1800.jpg?v=1592870586.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel Red Velvet</h5>
-        <p style="font-size:25px" class="card-text">$380</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://file.adomicil.io/esperanza.tr3sco.net/_files/images/product/e-commers2-0865092043236407.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Pastel Imposible</h5>
-        <p style="font-size:25px" class="card-text">$390</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!--div del container-->
-  </div>
-
-  <br/> <br/> <br/> <br/>
-  <!---->
+    <br />
+    <br />
+    <br />
+    <br />
+    <!---->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

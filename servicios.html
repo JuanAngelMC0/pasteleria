@@ -19,168 +19,295 @@
     <title>La Casita</title>
   </head>
   <body>
-
     <header>
       <!--Barra de navegación-->
-    <nav style="background-color: #bcf2f7" class="navbar navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="/Logo.jpeg" width="80px" /> </a>
-      <img src="/la casita letras.png" style="width: 160px; padding-right: 20px;"/>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+      <nav
+        style="background-color: #bcf2f7"
+        class="navbar navbar-expand-lg navbar-light"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link"  href="index.html">Pasteles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Otros productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contacto.html">Contactanos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/Logo.jpeg" width="80px" />
+          </a>
+          <img
+            src="/la casita letras.png"
+            style="width: 160px; padding-right: 20px"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Pasteles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Otros productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <br/> <br/>
+    <br />
+    <br />
 
     <!--Contenedor de conenido-->
-<div class="container">
-    
-  
+    <div class="container">
+      <!--Tarjetas-->
+      <div style="margin-top: 10px" class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/kcm44832357-1/L/desayuno-sorpresa-kcm44832357-1-631f8650dab94085aaaec7db373cea97.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Desayuno sorpresa</h5>
+              <p style="font-size: 25px" class="card-text">$380</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                id="btnModal1"
+                onclick="abrirModal()"
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/MxMktCB09-1/L/mxmktcb09-1-8d82461dc6a5f99-972c09ce.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kit Snacks</h5>
+              <p style="font-size: 25px" class="card-text">$410</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
 
-<!--Tarjetas-->
-<div style="margin-top:10px;" class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/MxMktFD10-1/L/mxmktfd10-1-8d8969a9b3b6514-84d0934.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kit servezas</h5>
+              <p style="font-size: 25px" class="card-text">$550</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
 
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/kcm44832357-1/L/desayuno-sorpresa-kcm44832357-1-631f8650dab94085aaaec7db373cea97.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Desayuno sorpresa</h5>
-        <p style="font-size:25px" class="card-text">$380</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button id="btnModal1" onclick="abrirModal()" style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/lolatc11-1/L/lolatc11-1-8d90a1e5beed38e-d69518cd.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ramo de donas</h5>
+              <p style="font-size: 25px" class="card-text">$680</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/MxMktBR10-1/L/mxmktbr10-1-8d8ddb37378ca8b-5c59bbc1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ramo de dulces</h5>
+              <p style="font-size: 25px" class="card-text">$305</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Modelo Ejemplo</h5>
+              <p style="font-size: 25px" class="card-text">$200</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/kcm44832357-1/L/desayuno-sorpresa-kcm44832357-1-631f8650dab94085aaaec7db373cea97.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Desayuno sorpresa</h5>
+              <p style="font-size: 25px" class="card-text">$380</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                id="btnModal1"
+                onclick="abrirModal()"
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/MxMktCB09-1/L/mxmktcb09-1-8d82461dc6a5f99-972c09ce.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kit Snacks</h5>
+              <p style="font-size: 25px" class="card-text">$410</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              style="height: 240px"
+              src="https://cdn03.lolaflora.com/bonnygift/MxMktFD10-1/L/mxmktfd10-1-8d8969a9b3b6514-84d0934.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kit servezas</h5>
+              <p style="font-size: 25px" class="card-text">$550</p>
+              <p class="card-text">
+                Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26
+              </p>
+              <button
+                style="background-color: #8d40d4"
+                type="button"
+                class="btn text-white"
+              >
+                Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!--div del container-->
     </div>
-  </div>
+    <!---->
 
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/MxMktCB09-1/L/mxmktcb09-1-8d82461dc6a5f99-972c09ce.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Kit Snacks</h5>
-        <p style="font-size:25px" class="card-text">$410</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/MxMktFD10-1/L/mxmktfd10-1-8d8969a9b3b6514-84d0934.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Kit servezas</h5>
-        <p style="font-size:25px" class="card-text">$550</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/lolatc11-1/L/lolatc11-1-8d90a1e5beed38e-d69518cd.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Ramo de donas</h5>
-        <p style="font-size:25px" class="card-text">$680</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/MxMktBR10-1/L/mxmktbr10-1-8d8ddb37378ca8b-5c59bbc1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Ramo de dulces</h5>
-        <p style="font-size:25px" class="card-text">$305</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://images.aws.nestle.recipes/original/181ae0cddbf3ebb40f45ce079fcf2eb5_PASTEL_DE_CHOCOLATE_.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Modelo Ejemplo</h5>
-        <p style="font-size:25px" class="card-text">$200</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-       <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/kcm44832357-1/L/desayuno-sorpresa-kcm44832357-1-631f8650dab94085aaaec7db373cea97.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Desayuno sorpresa</h5>
-        <p style="font-size:25px" class="card-text">$380</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button id="btnModal1" onclick="abrirModal()" style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/MxMktCB09-1/L/mxmktcb09-1-8d82461dc6a5f99-972c09ce.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Kit Snacks</h5>
-        <p style="font-size:25px" class="card-text">$410</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
-      <img style="height: 240px;" src="https://cdn03.lolaflora.com/bonnygift/MxMktFD10-1/L/mxmktfd10-1-8d8969a9b3b6514-84d0934.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Kit servezas</h5>
-        <p style="font-size:25px" class="card-text">$550</p>
-        <p class="card-text">Disponible en &nbsp; &nbsp; &nbsp; &nbsp; #23 #24 #25 #26</p>
-        <button style="background-color: #8d40d4" type="button" class="btn text-white">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-
-
-</div>
-
-<!--div del container-->
-  </div>
-  <!---->
-
-  <br/> <br/> <br/> <br/>
+    <br />
+    <br />
+    <br />
+    <br />
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
